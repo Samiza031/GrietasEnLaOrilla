@@ -1,0 +1,235 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.livvic-regular {
+    font-family: "Livvic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    font-family: 'Livvic', sans-serif;
+    background-color: #F0F4FF;
+    color: #333;
+}
+
+header {
+    background-color: #879DB2;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+.wave {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f4e4b7; /* Color naranja claro */
+    border-radius: 50%; /* Círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+
+h1 {
+    color: white;
+    font-size: 48px;
+    font-family: "Just Me Again Down Here", cursive;
+     font-weight: 400;
+     font-style: normal;
+    text-align: center;
+}
+h2{
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.hamburger {
+    width: 20px;
+    height: 2px;
+    background-color: #D2B99B;
+    position: relative;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #D2B99B;
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before {
+    top: -6px;
+}
+
+.hamburger::after {
+    bottom: -6px;
+}
+
+main {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.jar-container {
+    margin-bottom: 20px;
+}
+
+.jar {
+    width: 25%;
+    height: auto;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* Menú lateral */
+.side-menu {
+    width: 250px;
+    height: 100%;
+    background-color: #f4e4b7;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto fuera de la pantalla */
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 16px;
+    text-align: left;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Livvic', sans-serif;
+    color: #8F7658;
+    display: block;
+    font-weight: bold;
+}
+
+/* Cuando el menú está visible */
+.side-menu.open {
+    left: 0;
+}
+
+/* Fondo translúcido cuando el menú está abierto */
+body.menu-open::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+.concha-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .concha {
+    cursor: pointer;
+    margin: 0px 50px 20px 50px;
+    display: flex;
+    
+    
+  }
+  .titulo-conchas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+
+  .relato-titulo {
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+  
+  }
+
+  .relato {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+    display: none;
+    align-items: center;
+  }
+  
+  .relato.show {
+    display: flex; 
+    background-color:#d8dff1;
+    border-radius: 10px;
+    padding:20px;
+  }
+  
+  .relato p {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .relato-img {
+    width: 40%; 
+    height: auto;
+    border-radius: 10px;
+    margin-left: 30%;
+  }
+
+ 

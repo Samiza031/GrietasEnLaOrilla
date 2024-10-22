@@ -26,7 +26,7 @@ header {
 
 footer {
     background-color: #879DB2;
-    padding: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     margin-top: -30px;
     display: flex;
     flex-direction: row;

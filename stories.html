@@ -34,7 +34,7 @@
         <div class="concha-container">
             <div class="concha" id="concha-1">
                 <div class="titulo-conchas">
-                    <img src="https://i.imgur.com/fwVFfik.png" alt="Concha 1" class="conchas-img">
+                    <img src="https://i.imgur.com/fwVFfik.png" class="conchas-img" onerror='this.remove()'>
                     <div class="relato-titulo">1. El frasco de conchas</div>
                 </div>
                 <div class="relato" id="relato-1">
@@ -51,7 +51,7 @@
           
             <div class="concha" id="concha-2">
                 <div class="titulo-conchas">
-                    <img src="https://i.imgur.com/fwVFfik.png" alt="Concha 2" class="conchas-img">
+                    <img src="https://i.imgur.com/fwVFfik.png"  class="conchas-img"  onerror='this.remove()'>
                     <div class="relato-titulo">2. En un momento</div>
                 </div>
                 <div class="relato" id="relato-2">
@@ -71,7 +71,7 @@
 
             <div class="concha" id="concha-3">
                 <div class="titulo-conchas">
-                    <img src="https://i.imgur.com/fwVFfik.png" alt="Concha 2" class="conchas-img">
+                    <img src="https://i.imgur.com/fwVFfik.png" class="conchas-img" onerror='this.remove()'>
                     <div class="relato-titulo">3. Música</div>
                 </div>
                 <div class="relato" id="relato-2">
@@ -94,10 +94,13 @@
     <div class="formulario">
         <form id="story-form" class="form">
             <h2>Comparte tu historia</h2>
-            <label for="name">Tu nombre:</label><br>
+            <p>¿Alguna vez has vivido un terremoto u otro desastre natural? Comparte tu relato y añade tu historia a <em>Grietas</em><br/></p>
+            <p><br/></p>
+           
+            <label for="name"><strong>Tu nombre:</strong></label>
             <input type="text" id="name" name="name" required><br><br>
 
-            <label for="story">Tu historia:</label><br>
+            <label for="story"><strong>Tu historia:</strong> </label>
             <textarea id="story" name="story" rows="10" required></textarea><br><br>
 
             <button type="submit" class="button-submit">Enviar historia</button>

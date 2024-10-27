@@ -27,12 +27,22 @@ const conchas = document.querySelectorAll('.concha');
 conchas.forEach(concha => {
   concha.addEventListener('click', function() {
     const relato = this.querySelector('.relato');
-    
+    const img = this.querySelector('.conchas-img'); // Seleccionar la imagen de la concha
+
     // Alternar la clase "show" para mostrar u ocultar el relato
     relato.classList.toggle('show');
     
     // Alternar la clase "expand" para ajustar el tamaño del contenedor
     this.classList.toggle('expand');
+    
+    // Cambiar la imagen a la de una concha abierta
+    if (relato.classList.contains('show')) {
+      img.src = 'https://imgur.com/3F8RAk5.png'; 
+    } else {
+      img.src = 'https://i.imgur.com/fwVFfik.png'; 
+    }
   });
 });
+
+
 

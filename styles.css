@@ -19,18 +19,19 @@ body {
 
 header {
     background-color: #879DB2;
-    padding: 20px 20px 20px 20px;
+    padding: 2vw 2vw 2vw 2vw;
     text-align: center;
-    margin-bottom: -30px;
+    margin-bottom: -2vw;
 }
 
 footer {
     background-color: #879DB2;
-    padding: 30px 20px 20px 20px;
-    margin-top: -30px;
+    padding: 3vw 2vw 2vw 2vw;
+    margin-top: -2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 1vw;
 }
 
 .wave {
@@ -51,8 +52,8 @@ nav {
 
 
 .menu-icon {
-    width: 50px;
-    height: 50px;
+    width: 3vw; 
+    height: 3vw;
     background-color: #f4e4b7; /* Color naranja claro */
     border-radius: 50%; /* Círculo */
     display: flex;
@@ -60,7 +61,7 @@ nav {
     align-items: center;
     cursor: pointer;
     position: absolute;
-    left: 20px;
+    left: 2vw;
 }
 
 
@@ -73,36 +74,36 @@ h1 {
     text-align: center;
 }
 h2{
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
     font-style: italic;
     font-size: 2vw;
 }
 .hamburger {
-    width: 20px;
-    height: 2px;
+    width: 2vw;
+    height: 0.1vw;
     background-color: #D2B99B;
     position: relative;
 }
 
 .hamburger::before, .hamburger::after {
     content: '';
-    width: 20px;
-    height: 2px;
+    width: 2vw;
+    height: 0.1vw;
     background-color: #D2B99B;
     position: absolute;
     left: 0;
 }
 
 .hamburger::before {
-    top: -6px;
+    top: -0.5vw;
 }
 
 .hamburger::after {
-    bottom: -6px;
+    bottom: -0.5vw;
 }
 
 main {
-    padding: 0px 40px;
+    padding: 0vw 4vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,11 +113,11 @@ main {
 .content {
     text-align: center;
     max-width: 60%;
-    padding: 50px;
+    padding: 5vw;
 }
 
 .jar-container {
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 .jar {
@@ -129,6 +130,7 @@ main {
     line-height: 1.6;
     color: #555;
     text-align: center;
+    margin-top: 2vw;
 }
 
 @media (max-width: 768px) {
@@ -143,15 +145,15 @@ main {
 
 /* Menú lateral */
 .side-menu {
-    width: 250px;
+    width: 20%;
     height: 100%;
     background-color: #f4e4b7;
     position: fixed;
     top: 0;
-    left: -250px; /* Oculto fuera de la pantalla */
+    left: -100%; /* Oculto fuera de la pantalla */
     transition: left 0.3s ease-in-out;
     z-index: 1000;
-    padding-top: 60px;
+    padding-top: 2.5vw;
 }
 
 .side-menu ul {
@@ -160,7 +162,7 @@ main {
 }
 
 .side-menu ul li {
-    padding: 16px;
+    padding: 1vw 1vw;
     text-align: left;
 }
 
@@ -191,7 +193,7 @@ body.menu-open::before {
 }
 
 .concha-container {
-    margin-top: 20px;
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,15 +202,13 @@ body.menu-open::before {
   
   .concha {
     cursor: pointer;
-    margin: 0px 50px 20px 50px;
+    margin: 0vw 2vw 1vw 2vw;
     display: flex;
-    
     
   }
 
   .conchas-img{
-    width: 10%;
-    min-width: 120px;
+    width: 9vw;
     height: auto;
 
   }
@@ -217,7 +217,7 @@ body.menu-open::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 2vw;
   }
 
   .relato-titulo {
@@ -229,7 +229,7 @@ body.menu-open::before {
   }
 
   .relato {
-    margin-top: 10px;
+    margin-top: 1vw;
     color: #333;
     font-size: 1.5vw;
     display: none;
@@ -239,30 +239,30 @@ body.menu-open::before {
   .relato.show {
     display: flex; 
     background-color:#d8dff1;
-    border-radius: 10px;
-    padding:20px;
+    border-radius: 1vw;
+    padding:2%;
   }
   
   .relato p {
-    margin-left: 10px;
+    margin-left: 1vw;
     font-size: 1.5vw;
   }
   
   .relato-img {
     width: 40%; 
     height: auto;
-    border-radius: 10px;
+    border-radius: 1vw;
     margin-left: 30%;
   }
 
   .formulario {
-    margin: 100px 60px;
-    
+    margin: 10vw 6vw;
   }
+
   .button-submit{
     background-color: #879DB2;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
     border: 0px;
     color: white;
     font-size: 1.5vw;
@@ -275,10 +275,17 @@ body.menu-open::before {
   }
   
   input{
-    width: 80%;
-    min-height: 40px;
+    width: 60%;
+    min-height: 4vw;
   }
 
   textarea{
     width: 80%;
+    min-height: 6vw;
+  }
+
+  iframe{
+    width: 50vw;
+    height: 30vw;
+    
   }

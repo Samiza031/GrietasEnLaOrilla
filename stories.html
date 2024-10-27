@@ -34,7 +34,7 @@
         <div class="concha-container">
             <div class="concha" id="concha-1">
                 <div class="titulo-conchas">
-                    <img src="https://i.imgur.com/fwVFfik.png" class="conchas-img" onerror='this.remove()'>
+                    <img src="https://i.imgur.com/fwVFfik.png" class="conchas-img">
                     <div class="relato-titulo">1. El frasco de conchas</div>
                 </div>
                 <div class="relato" id="relato-1">
@@ -51,7 +51,7 @@
           
             <div class="concha" id="concha-2">
                 <div class="titulo-conchas">
-                    <img src="https://i.imgur.com/fwVFfik.png"  class="conchas-img"  onerror='this.remove()'>
+                    <img src="https://i.imgur.com/fwVFfik.png"  class="conchas-img">
                     <div class="relato-titulo">2. En un momento</div>
                 </div>
                 <div class="relato" id="relato-2">
@@ -71,7 +71,7 @@
 
             <div class="concha" id="concha-3">
                 <div class="titulo-conchas">
-                    <img src="https://i.imgur.com/fwVFfik.png" class="conchas-img" onerror='this.remove()'>
+                    <img src="https://i.imgur.com/fwVFfik.png" class="conchas-img">
                     <div class="relato-titulo">3. Música</div>
                 </div>
                 <div class="relato" id="relato-2">
@@ -99,6 +99,9 @@
            
             <label for="name"><strong>Tu nombre:</strong></label>
             <input type="text" id="name" name="name" required><br><br>
+
+            <label for="title"><strong>Título de la historia:</strong></label>
+            <input type="text" id="title" name="title"><br><br>
 
             <label for="story"><strong>Tu historia:</strong> </label>
             <textarea id="story" name="story" rows="10" required></textarea><br><br>
@@ -130,13 +133,15 @@
       document.getElementById('story-form').addEventListener('submit', function(event) {
           event.preventDefault();
 
-          const name = document.getElementById('name').value;
-          const story = document.getElementById('story').value;
+            const name = document.getElementById('name').value;
+            const title = document.getElementById('title').value;
+            const story = document.getElementById('story').value;
 
-          const templateParams = {
-              from_name: name,
-              message: story
-          };
+            const templateParams = {
+                from_name: name,
+                story_title: title,
+                message: story
+            };
 
           emailjs.send("service_i1nniek", "template_9xzlo4m", templateParams)
               .then(function(response) {

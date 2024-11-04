@@ -196,7 +196,7 @@ body.menu-open::before {
 
 .concha {
   cursor: pointer;
-  margin-bottom: 1vw;
+  margin-top: 1vw;
   display: flex;
 }
 
@@ -316,5 +316,8 @@ iframe{
     }
     .relato.show{
       height: 40vw;
+    }
+    .concha{
+      margin-top: 4vw;
     }
     }

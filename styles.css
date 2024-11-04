@@ -200,6 +200,11 @@ body.menu-open::before {
   display: flex;
 }
 
+.concha-comentario{
+  display: flex;
+  margin-top: 1.5vw;
+}
+
 .conchas-img{
   width: 9vw;
   height: auto;
@@ -250,8 +255,21 @@ body.menu-open::before {
   margin-left: 30%;
 }
 
+.comentario{
+  margin-top: 1vw;
+  color: #333;
+  max-height: 20vw;
+  display: flex; 
+  align-items: flex-start;
+  background-color:#d8dff1;
+  border-radius: 1vw;
+  padding:2vw;
+  overflow-y: scroll;
+  font-size: 1.5vw;
+}
+
 .formulario {
-  margin: 10vw 15vw;
+  margin: 10vw 0vw;
 }
 
 .button-submit{
@@ -296,7 +314,7 @@ iframe{
 }
 
   @media screen and (max-width: 700px) {
-    .footer, .form, .description, .side-menu ul li a, .button-submit, .relato, .relato-titulo, .relato p{
+    .footer, .form, .description, .side-menu ul li a, .button-submit, .relato, .relato-titulo, .relato p, .comentario{
       font-size: 3vw;
       }
 
@@ -317,7 +335,7 @@ iframe{
     .relato.show{
       height: 40vw;
     }
-    .concha{
-      margin-top: 6vw;
+    .concha, .concha-comentario{
+      margin-top: 4vw;
     }
     }

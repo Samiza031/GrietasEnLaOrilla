@@ -294,3 +294,25 @@ body.menu-open::before {
     height: 40vw;
     
   }
+
+
+  @media screen and (max-width: 700px) {
+    .footer, .form, .description, .side-menu ul li a, .button-submit, .relato, .relato-titulo, .relato p{
+      font-size: 3vw;
+      }
+
+    h1{
+      font-size: 8vw;
+    }
+
+    h2{
+      font-size: 3vw;
+    }
+    .menu-icon{
+      width: 5vw; 
+     height: 5vw;
+    }
+    .relato-titulo{
+      max-width: 16vw;
+    }
+    }

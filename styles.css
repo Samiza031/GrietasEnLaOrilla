@@ -204,6 +204,7 @@ body.menu-open::before {
 .concha-comentario{
   display: flex;
   margin-top: 1.5vw;
+  width: 100%;
 }
 
 .conchas-img{

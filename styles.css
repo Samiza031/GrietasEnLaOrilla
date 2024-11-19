@@ -317,8 +317,40 @@ iframe{
   height: 40vw; 
 }
 
+.conchas-inicio{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.concha-ini{
+  width: 20vw;
+  border-radius: 3vw;
+  background-color:#879db22a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.explora{
+  margin-top: 10vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.a-concha{
+  text-decoration: none;
+  color: #333;
+}
+
   @media screen and (max-width: 700px) {
-    .footer, .form, .description, .side-menu ul li a, .button-submit, .relato, .relato-titulo, .relato p, .comentario{
+    .footer, .form, .description, .side-menu ul li a, .button-submit, .relato, .relato-titulo, .relato p, .comentario, .concha-ini{
       font-size: 3vw;
       }
 
